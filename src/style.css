@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  height: 100vsh;
+  font-family: 'Playfair Display', serif;
+}
+
+.draw {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.fullpage-wrapper {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.section h2 {
+  font-size: 8rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: calc(100% - 100px);
+}
+
+.fp-overflow {
+  display: flex;
+  align-items: flex-end;
+  padding: 100px 0;
+  height: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.init-anim {
+  display: block;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.init-anim.fade-up {
+  transform: translateY(100%);
+}
+
+.animate {
+  opacity: 1;
+  transform: translateZ(0) !important;
+}
+
+.dg.ac {
+  z-index: 3 !important;
+}
+
+a {
+  display: block;
+  text-align: right;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+p {
+  text-align: right;
+  font-size: 4rem;
+}
+
+.box {
+  pointer-events: none;
+  position: fixed;
+  color: #fff;
+	font-size: 50px;
+  letter-spacing: 0.1em;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  z-index: 100;
+}
+
+.loader3 {
+  transition: 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
